@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Vitaliy Tykhovskyy](https://up.htmlacademy.ru/htmlcss/21/user/401081).
-* Наставник: `Неизвестно`.
+* Наставник: `Ирина Шашева`(https://htmlacademy.ru/profile/loyso).
 
 ---
 
