@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Глейси</title>
+</head>
+	<body>
 	<header class="main-header"> 
 		<nav class="main-navigation">
 		<a class="main-header-logo">
@@ -15,55 +15,72 @@
 			<li>Доставка и оплата</li>
 			<li>О компании</li>
 		</ul>
+		<ul class="site-navigation-catalog">
+			<li><b>Новинки</b></li>
+			<li>Сливочное</li>
+			<li>Щербеты</li>
+			<li>Фруктовый лед</li>
+			<li>Мелорин</li>
+		</ul>
 		<ul class="user-navigation">
           <li class="login-link">Поиск</li>
 		  <li class="login-link">Вход</li>
 		  <li class="login-link">Корзина</li>
         </ul>
-		<ul class="opening hours"> 
+		<span class="search"><input type="text">Что ищем?</input></span><br><br>
+		<div class="enter">
+			<input type="text">Электронная почта</input><br>
+			<input type="text">Пароль</input><br>
+			<button>Войти</button>
+			<span><u>Забыли пароль?</u></span>
+			<span><u>Новая регистрация</u></span>
+		</div>
+		<ul class="user-navigation"> 
 			<li>С 10 до 20, ежедневно</li>
-			<li><strong>8 812 450-25-25</strong></li>
+			<li><a href="tel:">8 812 450-25-25</a></li>
 		</ul>
-		<slider> 
+		<section class="slider"> 
 			<img src="img/slide.svg" alt="Слайдер">
-			<button>Давайте оба</button>
-		</slider>
+			<a href="#"><button>Давайте оба</button></a>
+		</section>
 		</nav>
 	</header>
 	<main class="container"> 
-		<h2>Малинки даром!</h2>
-		<p>
-			При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
-			малинового варенья бесплатно.
-		</p>
-		<button>Хочу варенье</button>
-		<h2>Шоколадки даром!</h2>
-		<p>
-			При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки
-			совершенно бесплатно.
-		</p>
-		<button>Хочу шоколадки!</button>
+		<section class="gift">
+			<h2>Малинки даром!</h2>
+			<p>
+				При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
+				малинового варенья бесплатно.
+			</p>
+			<a href="#"><button>Хочу варенье</button></a>
+			<h2>Шоколадки даром!</h2>
+			<p>
+				При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки
+				совершенно бесплатно.
+			</p>
+			<a href="#"><button>Хочу шоколадки!</button></a>
+		</section>
 		<section class="ice-crem"> 
 			<ul class="ice-info"> 
 				<li class="ice-price">
 					<span>310/кг</span>
 					<p>Сливочное с апельсиновым джемом и цытрусовой стружкой</p>
-					<img src="img/ice1.svg" alt="Сливочное мороженое">
+					<a href="#"><img src="img/ice1.svg" alt="Сливочное мороженое"></a>
 				</li>
 				<li class="ice-price">
 					<span>380/кг</span>
 					<p>Сливочно-кофейное с кусочками шоколада</p>
-					<img src="img/ice2.svg" alt="Сливочно-кофейное мороженое">
+					<a href="#"><img src="img/ice2.svg" alt="Сливочно-кофейное мороженое"></a>
 				</li>
 				<li class="ice-price">
 					<span>355/кг</span>
 					<p>Сливочно-клубничное сприсопкой из белого шоколада</p>
-					<img src="img/ice3.svg" alt="Сливочно-клубничное мороженое">
+					<a href="#"><img src="img/ice3.svg" alt="Сливочно-клубничное мороженое"></a>
 				</li>
 				<li class="ice-price">
 					<span>415/кг</span>
 					<p>Сливочное крем-брюле с карамельной подливкой</p>
-					<img src="img/ice4.svg" alt="Сливочное крем-брюле мороженое">
+					<a href="#"><img src="img/ice4.svg" alt="Сливочное крем-брюле мороженое"></a>
 				</li>
 			</ul>
 		</section>
@@ -108,15 +125,16 @@
 				</li>
 			</ul>	
 		</section>
-		<section class="ten ways">
+		<section class="news">
+			<article class="news-in">
 			<p>Новое в нашем блоге</p>
 			<h3>
 				10 способов сервировки
 				фруктовых щербетов к
 				столу
 			</h3>
-		</section>
-		<section class="mail"> 
+			</article>
+			<article class="mail"> 
 			<p>
 				Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
 				всего самого вкусного, что у нас происходит. Обещаем не спамить 
@@ -124,47 +142,51 @@
 			</p>
 			<input type="text" size="40"> 
 			<button>Отправить</button>
+			</article>
 		</section>
 		<section class="contacts">
 		<img src="img/ice-crem.svg" alt="Рожок">
-        <p>
+        <span>
            Адрес главного офиса
 		   и офлайн-магазина: 
 		   <strong>
 			ул. Большая Конюшенная 
 			19/8, Санкт-Петербург
 		   </strong>
-        </p>
-		<br>
-        <p>
-          Для заказов по телефону: 
-		  <strong>
-			8 812 450-25-25
-		  </strong>
+        </span>
+        <span>
+			Для заказов по телефону: 
+			<a href="tel:">8 812 450-25-25</a>
 			(c 10 до 20 ежедневно)
-        </p>
-		<button>Форма обратной связи</button>
-      </section>
+        </span>
+		<button>Форма обратной связи</button> 
+		</section>
+		<section>
+			<h2>Мы обязательно вам ответим!</h2>
+			<input type="text"> Как вас зовут?<br>
+			<input type="text"> Ваша почта для ответа?<br>
+			<input type="text"> Напишите что-нибудь...?<br>
+		</section>
 	</main>
 	<footer class="main-footer">
-		<div class="footer-social">
-			<a class="social-button" href="#">Твитер</a>
-			<a class="social-button" href="#">Инстаграм</a>
-			<a class="social-button" href="#">Фасебук</a>
-			<a class="social-button" href="#">Вконтакте</a>
-		</div>
+		<ul class="footer-social">
+			<li><a class="social-button" href="#">Твитер</a></li>
+			<li><a class="social-button" href="#">Инстаграм</a></li>
+			<li><a class="social-button" href="#">Фасебук</a></li>
+			<li><a class="social-button" href="#">Вконтакте</a></li>
+		</ul>
 		<p class="footer-information">
 			<b>Для поставщиков</b>
 			О производстве 
 			Наши документы 
 			Екологичиские стандарти
 		</p>
+		<section class="logo"> 
+			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-icon.svg"></a>
+		</section>
 		<p class="footer-copyright">
-		<img src="img/html-icon.svg">
 		Сделано в HTML Academy &copy; 2017
 		</p>
 	</footer>
-    
-
-  </body>
+	</body>
 </html>
