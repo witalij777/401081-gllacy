@@ -3,6 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Глейси</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	<!--font-family: 'Roboto', sans-serif; -->
+	<link rel="stylesheet" type="text/css" href="css/style.css" /> 
 </head>
 <body>
 	<header class="main-header">
@@ -39,14 +42,14 @@
 					<a href="#">Вход</a>
 					<form class="login-form" action="#" method="post">
 						<p class="login-item">
+							<label class="visually-hidden" for="email">Электронная почта</label>
 							<input class="input-field" id="email" type="email" name="email" placeholder="Электронная почта">
-							<label class="top-placeholder" for="email">Электронная почта</label>
 						</p>
 						<p class="login-item">
+							<label class="visually-hidden" for="password">Пароль</label>
 							<input class="input-field" id="password" type="password" name="password" placeholder="Пароль">
-							<label class="top-placeholder" for="password">Пароль</label>
 						</p>
-    					<button class="btn login-form-btn" type="submit">Войти</button>
+    					<button class="link" type="submit">Войти</button>
 						<p class="login-additional">
 							<a class="login-link" href="#"><u>Забыли пароль?</u></a>
 							<a class="login-link" href="#"><u>Новая регистрация</u></a>
@@ -57,7 +60,7 @@
 					<a href="#">Пусто</a>
 				</p>
 			</div>
-			<p class="user-navigation">
+			<p class="navigation">
 				<span>С 10 до 20, ежедневно</span>
 				<a href="tel:+88124502525">8 812 450-25-25</a>
 			</p>
@@ -66,19 +69,19 @@
 					<p class="slide-title">
 						Крем-брюле и пломбир с малиновым джемом
 					</p>
-					<a class="slide-btn" href="#">Давайте оба!</a>
+					<a class="link" href="#">Давайте оба!</a>
 				</div>
 				<div class="slider" id="slider2">
 					<p class="slide-title">
 						Шоколадный пломбир и лимонный сорбет
 					</p>
-					<a class="slide-btn" href="#">Давайте оба!</a>
+					<a class="link" href="#">Давайте оба!</a>
 				</div>
 				<div class="slider" id="slider3">
 					<p class="slide-title">
 						Пломбир с помадкой и клубничный щербет
 					</p>
-					<a class="slide-btn" href="#">Давайте оба!</a>
+					<a class="link" href="#">Давайте оба!</a>
 					<p class="switch">
 						<input type="radio" id="sl1" name="next" checked>
 						<input type="radio" id="sl2" name="next">
@@ -92,47 +95,51 @@
 		<section class="gift">
 			<h2 class="visually-hidden">Акция</h2>
 			<article class="gift1">
-				<h2>Малинки даром!</h2>
+				<h3>Малинки даром!</h3>
 				<p>
 					При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
 					малинового варенья бесплатно.
 				</p>
-				<a href="#">Хочу варенье</a>
+				<a href="#" class="link">Хочу варенье</a>
 			</article>
 			<article class="gift2">
-				<h2>Шоколадки даром!</h2>
+				<h3>Шоколадки даром!</h3>
 				<p>
 					При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки
 					совершенно бесплатно.
 				</p>
-				<a href="#">Хочу шоколадки!</a>
+				<a href="#" class="link">Хочу шоколадки!</a>
 			</article>
 		</section>
 		<section class="ice-crem">
 			<h2 class="visually-hidden">Хиты</h2>
 			<ul class="ice-info">
 				<li class="ice-price">
-					<span>310/кг</span>
-					<a href="#">Сливочное с апельсиновым джемом и цытрусовой стружкой</a>
-					<img src="img/ice1.jpg" width="100" height="100" alt="Сливочное мороженое">
+					<span class="price">310</span>
+					<span class="kilogram">/кг</span>
+					<a class="description-ice" href="#">Сливочное с апельсиновым джемом и цытрусовой стружкой</a>
+					<img src="img/ice1.jpg"	alt="Сливочное мороженое">
 					<a href="#">Быстрый просмотр</a>
 				</li>
 				<li class="ice-price">
-					<span>380/кг</span>
-					<a href="#">Сливочно-кофейное с кусочками шоколада</a>
-					<img src="img/ice2.jpg" width="100" height="100" alt="Сливочно-кофейное мороженое">
+					<span class="price">380</span>
+					<span class="kilogram">/кг</span>
+					<a class="description-ice" href="#">Сливочно-кофейное с кусочками шоколада</a>
+					<img src="img/ice2.jpg"	alt="Сливочно-кофейное мороженое">
 					<a href="#">Быстрый просмотр</a>
 				</li>
 				<li class="ice-price">
-					<span>355/кг</span>
-					<a href="#">Сливочно-клубничное сприсопкой из белого шоколада</a>
-					<img src="img/ice3.jpg" width="100" height="100" alt="Сливочно-клубничное мороженое">
+					<span class="price">355</span>
+					<span class="kilogram">/кг</span>
+					<a class="description-ice" href="#">Сливочно-клубничное сприсопкой из белого шоколада</a>
+					<img src="img/ice3.jpg"	alt="Сливочно-клубничное мороженое">
 					<a href="#">Быстрый просмотр</a>
 				</li>
 				<li class="ice-price">
-					<span>415/кг</span>
-					<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-					<img src="img/ice4.jpg" width="100" height="100" alt="Сливочное крем-брюле мороженое">
+					<span class="price">415</span>
+					<span class="kilogram">/кг</span>
+					<a class="description-ice" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+					<img src="img/ice4.jpg"	alt="Сливочное крем-брюле мороженое">
 					<a href="#">Быстрый просмотр</a>
 				</li>
 			</ul>
@@ -191,51 +198,57 @@
 			<article class="mail">
 				<h3 class="visually-hidden">Подписка</h3>
 				<p>
-					Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
-					всего самого вкусного, что у нас происходит. Обещаем не спамить
+					Подпишитесь на нашу сладкую рассылку и будете всегда в курсе<br>
+					всего самого вкусного, что у нас происходит. Обещаем не спамить<br>
 					и не слать всякой ненужной ерунды. Чесно =)
 				</p>
 				<form class="subscription" action="#" method="post">
 					<label class="visually-hidden" for="subscription-email">Электронная почта</label>
 					<input id="subscription-email" class="subscription-email input-field"
 					name="subscription-email" placeholder="Электронная почта" type="email">
-					<button class="btn subscription-btn" type="submit">Отправить</button>
+					<button class="link" type="submit">Отправить</button>
 				</form>
 			</article>
 		</section>
-		<section class="contacts">
-			<h3 class="visually-hidden">Адрес</h3>
-			<img src="img/ice-crem.svg" alt="Рожок">
-			<span>
-				Адрес главного офиса
-				и офлайн-магазина:
-				<strong>
-					ул. Большая Конюшенная
-					19/8, Санкт-Петербург
-				</strong>
-			</span>
-			<span>
-				Для заказов по телефону:
-				<a href="tel:+88124502525">8 812 450-25-25</a>
-				(c 10 до 20 ежедневно)
-			</span>
-			<a href="#">Форма обратной связи</a>
-		</section>
-		<section class="feedback">
-			<form class="feedback-form" action="#" method="post">
-				<h3>Мы обязательно вам ответим!</h3>
-				<p>
-					<label class="visually-hidden" for="name"> Как Вас зовут?</label>
-					<input class="input-field" type="text" id="name" name="user-name"
-					placeholder="Как Вас зовут?">
-				</p>
-				<p>
-					<input class="input-field" type="text" id="email-feedback" name="email-feedback" placeholder="Ваша почта для ответа?">
-					<label class= "top-placeholder" for="email-feedback">Ваша почта для ответа?</label>
-				</p>
-				<textarea name="comment" id="comment-field" rows="5" cols="15">Напишите что-нибудь...</textarea>
-				<button>Отправить</button>
-			</form>
+		<section class="map">
+			<article class="contacts">
+				<h3 class="visually-hidden">Адрес</h3>
+				<img src="img/ice-crem.svg" alt="Рожок"><br>
+				<span class="feedback-position1">
+					Адрес главного офиса<br>
+					и офлайн-магазина:<br>
+				</span>
+				<span class="feedback-position2">
+					ул. Большая Конюшенная<br>
+					19/8, Санкт-Петербург<br>
+				</span>
+				<span class="feedback-position3">
+					Для заказов по телефону:<br>
+				</span>
+				<span class="feedback-position4">
+					<a href="tel:+88124502525">8 812 450-25-25</a><br>
+				</span>
+				<span class="feedback-position5">
+					(c 10 до 20 ежедневно)<br>
+				</span>
+				<a class="link" href="#">Форма обратной связи</a>
+			</article>
+			<article class="feedback">
+				<form class="feedback-form" action="#" method="post">
+					<h3>Мы обязательно вам ответим!</h3>
+					<p>
+						<label class="visually-hidden" for="name"> Как Вас зовут?</label>
+						<input class="input-field" type="text" id="name" name="user-name"
+						placeholder="Как Вас зовут?">
+					</p>
+					<p>
+						<label class="visually-hidden" for="email-feedback"> Ваша почта для ответа?</label>
+						<input class="input-field" type="text" id="email-feedback" name="email-feedback" placeholder="Ваша почта для ответа?">
+					</p>
+					<textarea name="comment" id="comment-field" rows="5" cols="15">Напишите что-нибудь...</textarea>
+					<button class="link">Отправить</button>
+				</form>
+			</article>
 		</section>
 	</main>
 
@@ -247,13 +260,13 @@
 			<li><a class="social-button" href="#">Вконтакте</a></li>
 		</ul>
 		<ul class="footer-information">
-			<li><a href="#"><b>Для поставщиков</b></a><li>
-			<li><a href="#">О производстве</a><li>
-			<li><a href="#">Наши документы</a><li>
-			<li><a href="#">Екологичиские стандарти</a><li>
+			<li><a href="#" class="provider">Для поставщиков</a><li>
+			<li><a href="#" class="view">О производстве</a><li>
+			<li><a href="#" class="view">Наши документы</a><li>
+			<li><a href="#" class="view">Екологичиские стандарти</a><li>
 		</ul>
 		<div class="logo">
-			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-icon.svg" alt="академия"></a>
+			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="../img/logo-htmlacademy.svg" alt="академия"></a>
 			<p class="footer-copyright">
 				Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017
 			</p>
