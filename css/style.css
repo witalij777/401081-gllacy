@@ -1,3 +1,4 @@
+html,
 body {
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
@@ -5,6 +6,7 @@ body {
 	background-color: #849d8f;
 	color: #ffffff;
 	font-weight: bold;
+	width: 1200px;
 }
 
 a {
@@ -162,6 +164,7 @@ a {
 	font-weight: 500;
 	line-height: 16px;
 	background-color: #a1b4a9;
+	margin-top: 30px;
 }
 
 .link5:hover {
@@ -275,15 +278,14 @@ a {
 }
 
 .main-header {
-  box-sizing: border-box;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 27px;
+	box-sizing: border-box;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 27px;
 }
 
 .main-navigation {
 	display: flex;
-	align-items: center;
 }
 
 .main-header-logo {
@@ -354,6 +356,10 @@ a {
 
 .login-link:hover .login-in {
 	visibility: visible;
+}
+
+.enter-site {
+	
 }
 
 .enter-site .login-in {
@@ -528,6 +534,7 @@ a {
 }
 
 .link-under {
+	margin-left: 25px;
 	border-bottom: 1px solid rgba(255,255,255,0.2)
 }
 
@@ -657,29 +664,30 @@ a {
 
 
 .slider {
-  position: relative;
-  
-  padding-top: 321px;
-  
-  text-align: center;
-  color: #ffffff;
+	position: relative;
+	text-align: center;
+	color: #ffffff;
 }
 
 .slider-list {
-  margin: 0;
-  padding: 0;
-  
-  list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .slide-title {
-  width: 700px;
-  margin: 0 auto;
-  margin-bottom: 27px;
-  
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: 800;
+	width: 700px;
+	margin: 0 auto;
+	margin-bottom: 27px;
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 800;
+	padding-top: 330px;
+}
+
+.come-on {
+ 
+	position: center;
 }
 
 .slide1 {
@@ -840,6 +848,10 @@ a {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 40px;
+	box-sizing: border-box;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 27px 0px;
 }
 
 .visually-hidden {
@@ -850,17 +862,11 @@ a {
 	margin: -1px;
 }
 
-.gift {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 40px;
-}
-
 .gift1 {
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-	width: 48.85%;
+	width: 560px;
 	min-height: 229px;
 	padding: 15px 20px 23px;
 	box-sizing: border-box;
@@ -887,7 +893,6 @@ a {
 }
 
 .gift-left {
-	margin-right: 2.2%;
 	background-image: url("../img/raspberry.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -903,11 +908,12 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-	width: 48.85%;
+	width: 560px;
 	min-height: 229px;
 	padding: 15px 20px 23px;
 	box-sizing: border-box;
 	border-radius: 15px;
+	margin-right: 47px;
 }
 
 .gift2 h3 {
@@ -981,6 +987,10 @@ a {
 	margin: 0;
 }                                                    /*-----------OSHYBKA*/
 
+.ice-crem {
+	margin-top: 40px;
+}
+
 .ice-crem ul {
 	list-style: none;
 }
@@ -1028,6 +1038,8 @@ a {
 	border-radius: 15px;
 	padding: 23.5px 20px 14px;
 	margin-bottom: 40px;
+	
+	
 }
 
 .about-us-title {
@@ -1108,7 +1120,7 @@ a {
 }
 
 .news-in {
-	width: 48.85%;
+	width: 560px;
 	min-height: 220px;
 	padding: 22px 21px;
 	box-sizing: border-box;
@@ -1147,7 +1159,7 @@ a {
 
 .mail {
 	display: flex;
-	width: 48.85%;
+	width: 560px;
 	padding: 6px;
 	/*background-color: #f8f7f4; */
 	box-sizing: border-box;
@@ -1316,29 +1328,57 @@ a {
 	border-radius: 5px;
 }
 /*--------------------------------------------FOOTER----------------------------------------------- */
-.bottom {
+/*.bottom {
 	width: 1200px;
 	margin: 0 auto;
 	box-sizing: border-box;
+	min-height: 100px;
+}*/
+.main-navigation {
+	display: flex;
 }
+
+.main-header-logo {
+	font-size: 0;
+	line-height: 0;
+	margin-right: 10px;
+}
+
+.main-navigation ul { 
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+
+
+
+
 
 .main-footer {	
 	width: 1150px;
+	min-height: 100px;
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	padding-top: 18px;
 	padding-left: 27px;
-	padding-right: 235px;
+	padding-right: 27px;
 	padding-bottom: 25px;
 }
 
-.footer-social {
-	width: 185px;
+.social {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	width: 25%;
 }
 
-.social-list {
+.footer-social {
+	display: inline-flex;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -1368,10 +1408,20 @@ a {
 }
 /* ------------------------------------------------------------------------------*/
 .footer-information {	
+	/*display: inline-block;
+	vertical-align: top;
+	font-size: 0;
+	margin-right: 100px;
+	margin-left: 80px;
+	padding: 5px;
+	padding-bottom: 0;
+	padding-top: 0px;
+	margin-top: 27px;*/
+	
 	width: 305px;
-	display: flex;
+	display: inline-flex;
 	flex-wrap: wrap;
-	padding-left: 230px;
+	padding-left: 230px;   
 }
 
 .provider {
@@ -1392,10 +1442,10 @@ a {
 /*----------------------------------------------------------------------------------------*/
 .logo {
 	width: 190px;
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
 	align-items: flex-end;
-	margin-left: 230px;
+	margin-left: 500px;
 	color: #ffffff;
 	font-size: 12px;
 	line-height: 16px;
