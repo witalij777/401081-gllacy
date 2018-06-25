@@ -1203,10 +1203,11 @@ a {
 	background: url("../img/waffle.jpg");
 	border-radius: 15px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	box-sizing: border-box;
 	width: 1200px;
-	height: 305px;
+	height: 306px;
 	margin: 0 auto;
 }
 
