@@ -598,7 +598,8 @@ a {
 	list-style: none;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 27px;
+	padding-left: 27px;
+	padding-right: 27px;
 }
 
 .bc {
@@ -988,11 +989,13 @@ a {
 .gift {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 40px;
 	box-sizing: border-box;
 	width: 1200px;
 	margin: 0 auto;
-	padding: 27px 0px;
+	margin-bottom: 40px;
+	padding-left: 27px; 
+	padding-right: 27px;
+	
 }
 
 .visually-hidden {
@@ -1054,7 +1057,6 @@ a {
 	padding: 15px 20px 23px;
 	box-sizing: border-box;
 	border-radius: 15px;
-	margin-right: 27px;
 }
 
 .gift2 h3 {
@@ -1136,11 +1138,12 @@ a {
 .ice-crem {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 40px;
 	box-sizing: border-box;
 	width: 1200px;
 	margin: 0 auto;
-	padding: 27px 0px;
+	margin-bottom: 40px;
+	padding-left: 27px; 
+	padding-right: 27px;
 }
 
 .ice-crem ul {
@@ -1185,17 +1188,26 @@ a {
 	background-position: center;
 }
 /*--------------------------------------------INFORMATION----------------------------------------- */
+.box-information {
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	padding-left: 27px; 
+	padding-right: 27px;
+}
+
 .information {
 	background: url("../img/waffle.jpg");
 	border-radius: 15px;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 40px;
 	box-sizing: border-box;
 	width: 1200px;
 	height: 305px;
 	margin: 0 auto;
-	
 }
 
 .about-us-title {
@@ -1272,11 +1284,12 @@ a {
 .news {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 40px;
 	box-sizing: border-box;
 	width: 1200px;
 	margin: 0 auto;
-	padding: 27px 0px;
+	margin-bottom: 40px;
+	padding-left: 27px; 
+	padding-right: 27px;
 }
 
 .news-in {
@@ -1364,6 +1377,7 @@ a {
 	height: 430px;
 	margin: 0px; 
 	padding: 0px;
+	margin-bottom: 37px;
 }
 
 .map-in {
@@ -1494,6 +1508,7 @@ a {
 	display: flex;
 	justify-content: flex-end;
 	list-style: none;
+	margin-bottom: 37px;
 }
 
 .whiteback {
@@ -1509,6 +1524,15 @@ a {
 	padding: 26px 27px;
 	border-radius: 50%;
 }
+
+.sub {
+	width: 1146px;
+	height: 1px;
+	background-color: #ffffff;
+	opacity: 0.3; 
+	margin-bottom: 18px;
+	
+}
 /*--------------------------------------------FOOTER----------------------------------------------- */
 .main-footer {	
 	/*width: 1145px;
@@ -1516,13 +1540,14 @@ a {
 	justify-content: space-between;
 	align-items: center; 
 	*/ 
-		display: flex;
+	display: flex;
 	justify-content: space-between;
 	margin-bottom: 40px;
 	box-sizing: border-box;
 	width: 1200px;
 	margin: 0 auto;
-	padding: 27px 0px;
+	padding-left: 27px; 
+	padding-right: 27px;
 
 }
 
@@ -1531,8 +1556,7 @@ a {
 	justify-content: flex-start;
 	align-items: center;
 	width: 185px;
-	margin-left: 27px;
-	margin-top: 35px;
+	height: 40px;
 	margin-bottom: 28px;
 	border: 1px solid black;
 }
@@ -1581,10 +1605,11 @@ a {
 	display: inline-flex;
 	flex-wrap: wrap; 
 	width: 305px;
-	margin-top: 35px;
+	height: 37px;
 	margin-bottom: 28px;
 	border: 1px solid black;
 	margin-left: 235px; 
+	padding: 0px;
 	
 }
 
@@ -1593,7 +1618,12 @@ a {
 	font-size: 13px;
 	font-weight: 700;
 	line-height: 18px;
+	margin-right: 31px;
 	border-bottom: 1px solid rgba(255,255,255,0.2)
+}
+
+.about-production {
+	margin-right: 44px;
 }
 
 .view {
@@ -1610,19 +1640,18 @@ a {
 	align-items: flex-end;
 	color: #ffffff;
 	font-size: 12px;
-	line-height: 16px;
+	line-height: 18px;
 	font-weight: 400;
 	width: 190px;
-	margin-right: 27px;
-	margin-top: 35px;
 	margin-bottom: 28px;
 	border: 1px solid black;
+	margin-left: 230px;
 }
 
 .logo img {
 	width: 108px;
 	height: 39px;
-
+	margin-right: 80px;
 }	
 	
 .logo p {
@@ -1630,7 +1659,6 @@ a {
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 18px;
-	
 }
 
 .footer-copyright a {
