@@ -420,8 +420,7 @@ a {
 }
 
 .container {
-	padding-left: 27px;
-	padding-right: 27px;
+	
 }
 
 
@@ -727,19 +726,31 @@ a {
 }
 
 .range {
+	width: 220px;
 	border: none;
+	border: 1px solid yellow;
 }
 
 .range-price {
-	width: 220px;
+	display: flex;
+	width: 100%;
 	background-color: rgba(225, 255, 255, 0.2);
 	border-radius: 17px;
 }
 
+.fatness-label {
+	margin-left: 20px;
+}
+
 .customize-form {
-	width: 415px;
+	display: flex;
+	width: 100%;
 	background-color: rgba(225, 255, 255, 0.2);
 	border-radius: 17px;
+}
+
+.filler-label {
+	margin-left: 20px;
 }
 
 .login-link {
@@ -765,6 +776,7 @@ a {
 
 .fatness {
 	border: none;
+	width: 415px;
 }
 
 .fatness-value {
@@ -1042,7 +1054,7 @@ a {
 	padding: 15px 20px 23px;
 	box-sizing: border-box;
 	border-radius: 15px;
-	margin-right: 47px;
+	margin-right: 27px;
 }
 
 .gift2 h3 {
@@ -1077,6 +1089,7 @@ a {
 .ice-price {
 	width: 23.25%;
 	margin-bottom: 37px;
+	box-sizing: border-box;
 }
 
 .ice-price img {
@@ -1121,7 +1134,13 @@ a {
 }                                                    /*-----------OSHYBKA*/
 
 .ice-crem {
-	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+	box-sizing: border-box;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 27px 0px;
 }
 
 .ice-crem ul {
@@ -1169,9 +1188,13 @@ a {
 .information {
 	background: url("../img/waffle.jpg");
 	border-radius: 15px;
-	padding: 23.5px 20px 14px;
+	display: flex;
+	justify-content: space-between;
 	margin-bottom: 40px;
-	
+	box-sizing: border-box;
+	width: 1200px;
+	height: 305px;
+	margin: 0 auto;
 	
 }
 
@@ -1250,6 +1273,10 @@ a {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 40px;
+	box-sizing: border-box;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 27px 0px;
 }
 
 .news-in {
@@ -1335,6 +1362,8 @@ a {
 	background: url("../img/map.jpg");
 	width: 100%;
 	height: 430px;
+	margin: 0px; 
+	padding: 0px;
 }
 
 .map-in {
@@ -1464,6 +1493,7 @@ a {
 .inner-slide {
 	display: flex;
 	justify-content: flex-end;
+	list-style: none;
 }
 
 .whiteback {
@@ -1478,14 +1508,21 @@ a {
 	background-color: #849d8f;
 	padding: 26px 27px;
 	border-radius: 50%;
-	
 }
 /*--------------------------------------------FOOTER----------------------------------------------- */
 .main-footer {	
-	width: 1145px;
+	/*width: 1145px;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: center; 
+	*/ 
+		display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+	box-sizing: border-box;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 27px 0px;
 
 }
 
