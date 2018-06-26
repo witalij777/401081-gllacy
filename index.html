@@ -32,18 +32,26 @@
 				</li>
 			</ul>
 			<div class="user-navigation">
-				<!--<div class="login-link user-search">
+				<div class="login-link user-search">
 					<a href="#"></a>
-					<form class="search" action="#" method="get">
+					<!--<form class="search" action="#" method="get">
 						<p class="search-paragraph">
 							<label class="visually-hidden" for="search">Что ищем?</label>
 							<input class="input-field" id="search" type="search" name="search" placeholder="Что ищем?">
 						</p>
 						<button class="user-btn search-btn" type="submit"></button>
-					</form>
-				</div> -->
-				<div class="enter-site">
-					<a href="#" class="link5">Вход</a>
+					</form>-->
+				</div>
+				<div class="enter-site login-link">
+					<span class="foto-svg">
+						<a href="#" class="link-svg">
+							<svg xmlns="http://www.w3.org/2000/svg" 
+							xmlns:xlink="http://www.w3.org/1999/xlink" 
+							width="21" height="19" 
+							viewBox="0 0 21 19"><g fill="#ffffff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+							<span>Вход</span>
+						</a>
+					</span>
 					<!--<div class="login-in">
 						<form class="login-form" action="#" method="post">
 							<p class="login-item">
@@ -63,7 +71,12 @@
 					</div>-->
 				</div>
 				<span class="basket">
-					<a href="#" class="link5">Пусто</a>
+					<a href="#" class="link-svg link-basket">
+						<svg xmlns="http://www.w3.org/2000/svg" 
+						width="21" height="20" viewBox="0 0 21 20">
+						<g fill="#ffffff"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
+						Пусто
+					</a>
 				</span>
 				<p class="navigation">
 					<span class="navigation1">С 10 до 20, ежедневно</span>
@@ -72,20 +85,55 @@
 			</div>
 		</nav>
 	</header>
-	<main class="container">
-		<section class="slider">
-			  <div class="slider-controls">
+	<main class="container2">
+	<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+    <div class="site-wrapper">
+      <div class="container">
+        <header class="main-header"></header>
+        <section class="slider">
+          <div class="slider-controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item slide" id="slide1">
+              <h3 class="slide-title">
+                Крем-брюле и пломбир с малиновым джемом
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide2">
+              <h3 class="slide-title">
+                Шоколадный пломбир и лимонный сорбет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide3">
+              <h3 class="slide-title">
+                Пломбир с помадкой и клубничный щербет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+		<!--<section class="slider">
+			<!--<div class="slider-controls">
 				<label for="product-1"></label>
 				<label for="product-2"></label>
 				<label for="product-3"></label>
-			  </div>
-			  <ul class="slider-list">
+			</div>-->
+			  <!-- ETOO <ul class="slider-list">
 				<li class="slider-item slide1" id="slide1">
 				  <h3 class="slide-title">
 					Крем-брюле и пломбир с малиновым джемом
 				  </h3>
 				  <a class="link3 come-on" href="#">Давайте оба!</a>
-				</li> <!--
+				</li>  ETOO <!--
 				<li class="slider-item slide2" id="slide2">
 				  <h3 class="slide-title">
 					Шоколадный пломбир и лимонный сорбет
@@ -97,9 +145,14 @@
 					Пломбир с помадкой и клубничный щербет
 				  </h3>
 				  <a class="link3" href="#">Давайте оба!</a>
-				</li> -->
+				</li> -->    <!--
+				<p class="switch">
+					<input type="radio" id="sl1" name="next" checked>
+					<input type="radio" id="sl2" name="next">
+					<input type="radio" id="sl3" name="next">
+				</p>
 			  </ul>
-			</section>
+			</section>   -->
 	
 	
 	
@@ -219,9 +272,6 @@
 					Магазин Глэйси - это онлайн - и офлайн - магазин по продаже мороженого
 					производства на развес
 				</h3>
-				<br>
-				<br> 
-				<br>
 				<ul class="about-us-articles">
 					<li class="about-us-list lizak">
 						<p>
