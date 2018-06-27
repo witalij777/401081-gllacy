@@ -1,11 +1,12 @@
 html,
 body {
 	font-family: "Roboto", "Arial", sans-serif;
-	font-size: 16px;
+	font-size: 18px; /* or 16px */
 	line-height: 1.2;
 	background-color: #849d8f;
 	color: #ffffff;
 	font-weight: bold;
+	margin: 0;
 }
 
 a {
@@ -463,7 +464,7 @@ a {
 .container {
 	
 }
-/********************8               SLIDER ************************************/ 
+/*************************************** SLIDER ************************************/ 
 .visually-hidden {
   position: absolute;
 
@@ -476,7 +477,7 @@ a {
 .site-wrapper {
   min-width: 940px;
   background-color: #849d8f;
-  background-image: url("img/slider-item1.png");
+  background-image: url("img/slide1.png");
   background-repeat: no-repeat;
   background-position: top center;
   
@@ -726,20 +727,32 @@ a {
 }
 
 .link-under {
-	margin-left: 25px;
-	border-bottom: 1px solid rgba(255,255,255,0.2)
+	margin-left: 1px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 6px 16px;
+	padding-bottom: 8px;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	text-decoration: underline;	
+	-webkit-text-decoration-color: rgba(255, 255, 255, 0.3);
+	text-decoration-color: rgba(255, 255, 255, 0.3);
+	text-align: center;
+	color: #ffffff;
 }
 
 .link-under:hover {
-	color: #333333;
+	color: #323232;
 	background-color: #f7f6f3;
+	border-radius: 16px;
+	text-decoration: none;
 }
 
 .link-under:active {
-	box-shadow: inset 0 2px 1px #696969;
+	box-shadow: inset 0 2px 2px #696969;	
+	color: #323232;
 	background-color: #ededed;
-	background-color: #f8f7f4;
-	color: #333333;
 }
 
 .active {
@@ -1015,7 +1028,7 @@ a {
 	line-height: 18px;
 }
 
-.slider {
+/*.slider {
 	position: relative;
 	text-align: center;
 	color: #ffffff;
@@ -1038,7 +1051,6 @@ a {
 }
 
 .come-on {
- 
 	position: center;
 }
 
@@ -1049,16 +1061,7 @@ a {
 	/* Для демонстрации */
 }
 
-
-
-
-
-
-
-
-
-
-
+/*---------------------------старые свойста слайдера--------------------------------------------------------*/
 
 /*.slider {
 	min-width: 940px;
@@ -1089,30 +1092,6 @@ a {
 	color: #ffffff;
 	font-weight: 700;
 } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .navigation {
@@ -1581,6 +1560,7 @@ a {
 	margin: 0px; 
 	padding: 0px;
 	margin-bottom: 37px;
+	background-size: cover;
 }
 
 .map-in {
