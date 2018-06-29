@@ -285,6 +285,7 @@ a {
 	width: 1200px;
 	margin: 0 auto;
 	padding: 0 27px;
+	padding-top: 10px;
 }
 
 .main-navigation {
@@ -567,7 +568,7 @@ a {
 
 .slider-controls {
 	position: absolute;
-	bottom: 63px;
+	bottom: 20px;
 	left: 0;
 	z-index: 20;
 	font-size: 0;
@@ -753,6 +754,8 @@ a {
 
 .active {
 	background-color: #d07058;
+	border-radius: 20px;
+	text-decoration: none;
 }
 
 .color {
@@ -858,6 +861,7 @@ a {
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
+	top: -50px;
 }
 .breadcrumbs-item:nth-child(n + 2) {
 	padding-left: 16px;
@@ -897,7 +901,7 @@ a {
 }
 /*--------------------------------------------catalog main----------------------------------*/
 .padding-left {
-	margin: 0 auto;
+	margin-top: -53px;
 	padding: 0 27px;
 }
 
@@ -906,6 +910,7 @@ a {
 	flex-wrap: wrap;
 	box-sizing: border-box;
 	width: 1200px;
+	height: 135px;
 	margin: 0 auto;
 	padding: 0 27px;
 	border: 1px solid red;
@@ -1108,12 +1113,14 @@ a {
 
 .sort-selection {
 	color: #ffffff;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 500;
-	line-height: 16px;
+	line-height: 18px;
 	/*background-color: #a1b4a9; */
 	background-color: rgba(225, 255, 255, 0.2);
 	border-radius: 17px;
+	padding: 5px;
+
 }
 
 .sort-selection:hover {
@@ -1140,6 +1147,11 @@ a {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 18px;
+	padding-top: 7px;
+	padding-bottom: 5px;
+	padding-left: 29px;
+	padding-right: 25px; 
+	border-radius: 20px;
 }
 
 .user-btn:hover {
@@ -1307,10 +1319,15 @@ a {
 
 .price-in {
 	position: absolute;
-	bottom: 18px;
+	bottom: 16px;
 	left: 0;
 	margin: 0;
-}                                                    /*-----------OSHYBKA*/
+} 
+
+.price-in svg {
+	
+}                                                  
+															/*-----------OSHYBKA*/
 
 .ice-crem {
 	display: flex;
@@ -1322,6 +1339,11 @@ a {
 	padding-right: 27px;
 }
 
+.ice-margin {
+	margin-top: 38px;
+	margin-bottom: 50px;
+} 
+
 .ice-crem ul {
 	list-style: none;
 }
@@ -1329,6 +1351,14 @@ a {
 .ice-price {
 	border-radius: 50%;
 }
+
+/*.ice-line2 {
+	margin-top: 3px;
+}
+
+.ice-line3 {
+	margin-top: 5px;
+} */
 
 .price {
 	color: #ffffff;
@@ -1342,6 +1372,7 @@ a {
 	color: #ffffff; 
 	font-size: 30px;
 	text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+	margin-left: -5px;
 }
 
 .ice-title {
@@ -1550,9 +1581,13 @@ a {
 	position: relative;
 }
 
+/*.subscription-email {
+	margin-top: 10px;
+	padding: 11px;
+}*/
+
 .subscription input[type="email"] {
 	flex-grow: 1;
-	margin-right: 11px;
 }
 
 .subscription input[type="submit"] {
@@ -1571,12 +1606,13 @@ a {
 
 .map-in {
 	position: relative;
+	box-sizing: border-box;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 63px 20px;
 }
 .contacts {
 	background-color: #fffefe;
-	position: absolute;
-	right: 2.3%;
-	top: 62px;
 	width: 302px;
 	padding: 30px 25px;
 	box-sizing: border-box;
@@ -1673,6 +1709,7 @@ a {
 	border: 1px solid rgba(178, 178, 178, 0.52);
 	background-color: #ffffff;
 	border-radius: 5px;
+	
 }
 
 .feedback-form textarea {
@@ -1694,29 +1731,35 @@ a {
 }
 
 .inner-slide {
+	width: 1138px;
 	display: flex;
 	justify-content: flex-end;
 	list-style: none;
-	margin-bottom: 37px;
+	margin-bottom: 28px;
+	border: 1px solid red;
 }
 
 .whiteback {
 	background-color: #ffffff;
 	color: #323232;
 	background-image: url("../img/whiteball.png");
-	padding: 26px 27px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	padding-right: 9px;
 	border-radius: 50%;
 }
 
 .page-switch {
 	background-color: #849d8f;
-	padding: 26px 27px;
-	border-radius: 50%;
+	padding: 10px;;
+	border-radius: 50%; 
+	font-size: 16px;
 }
 
 .sub {
 	width: 1146px;
-	height: 1px;
+	height: 0.5px;
 	background-color: #ffffff;
 	opacity: 0.3; 
 	margin-bottom: 18px;
@@ -1744,6 +1787,7 @@ a {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	margin-top: 15px;
 	width: 185px;
 	height: 40px;
 	margin-bottom: 28px;
@@ -1795,6 +1839,7 @@ a {
 	flex-wrap: wrap; 
 	width: 305px;
 	height: 37px;
+	align-items: center;
 	margin-bottom: 28px;
 	border: 1px solid black;
 	margin-left: 235px; 
@@ -1826,14 +1871,12 @@ a {
 .logo {
 	display: inline-flex;
 	flex-direction: column;
-	align-items: flex-end;
 	color: #ffffff;
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: 400;
 	width: 190px;
 	margin-bottom: 28px;
-	border: 1px solid black;
 	margin-left: 230px;
 }
 
