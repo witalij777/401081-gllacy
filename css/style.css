@@ -1657,11 +1657,21 @@ a {
 .page-switch:hover {
 	background-color: #9db1a5; 
 	color: #ffffff;
+			padding-top: 4px;
+	padding-bottom: 3px;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-radius: 50%;
 }
 
 .page-switch:active {
 	background-color: #ffffff;
 	color: #323232;
+			padding-top: 4px;
+	padding-bottom: 3px;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-radius: 50%;
 }
 
 .gift {
@@ -2230,7 +2240,6 @@ a {
 	justify-content: flex-end;
 	list-style: none;
 	margin-bottom: 28px;
-	border: 1px solid red;
 }
 
 .whiteback {
@@ -2246,7 +2255,7 @@ a {
 
 .page-switch {
 	background-color: #849d8f;
-	margin-left: 20px;
+	padding: 10px;
 	border-radius: 50%; 
 	font-size: 16px;
 }
