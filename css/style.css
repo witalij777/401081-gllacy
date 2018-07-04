@@ -1033,8 +1033,10 @@ a {
     width: 22px;
     height: 22px;
     color: #333333;
-    background: url("../img/sprite.png") no-repeat;
-    background-position: -11px -9px;
+    background: url("img/basket-red.png") no-repeat;
+	background-color: red;
+	fill: #323232;
+   
 }
 
 .basket-btn.full-basket-btn {
@@ -1043,10 +1045,10 @@ a {
     background-color: #f8f7f4;
 }
 
-.full-basket-btn::before {
+.full-basket-btn {
     color: #333333;
-    background: url("../img/sprite.png") no-repeat;
-    background-position: -12px -49px;
+    background: url("img/basket-red.png") no-repeat;
+	background-color: #323232;
 }
 
 .purchase {
