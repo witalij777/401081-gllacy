@@ -1,7 +1,7 @@
 html,
 body {
 	font-family: "Roboto", "Arial", sans-serif;
-	font-size: 18px; /* or 16px */
+	font-size: 18px;
 	line-height: 1.2;
 	background-color: #849d8f;
 	color: #ffffff;
@@ -89,7 +89,7 @@ a {
 	vertical-align: top;
 	padding: 8px 23px;
 	padding-bottom: 12px;
-	font-family: Roboto, Arial, sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 24px;
@@ -124,7 +124,7 @@ a {
 	vertical-align: top;
 	padding: 8px 23px;
 	padding-bottom: 12px;
-	font-family: Roboto, Arial, sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-weight: 700;
 	text-align: center;
 	text-transform: none;
@@ -160,7 +160,7 @@ a {
 	vertical-align: top;
 	padding: 8px 23px;
 	padding-bottom: 12px;
-	font-family: Roboto, Arial, sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-weight: 700;
 	text-align: center;
 	text-transform: none;
@@ -237,7 +237,7 @@ a {
 	vertical-align: top;
 	padding: 8px 23px;
 	padding-bottom: 12px;
-	font-family: Roboto, Arial, sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-weight: 700;
 	text-align: center;
 	text-transform: none;
@@ -564,6 +564,7 @@ a {
 .enter-in:hover svg{
 	fill: #323232;
 }
+
 .enter-in:hover {
 	color: #323232;
 	fill: #323232;
@@ -676,7 +677,6 @@ a {
 .slider {
 	position: relative;
 	padding-top: 321px;
-
 	text-align: center;
 	color: #ffffff;
 	width: 1200px;
@@ -696,7 +696,7 @@ a {
 }
 
 .slide-title {
-  	width: 700px;
+	width: 700px;
 	margin: 0 auto;
 	margin-bottom: 27px;
 	font-size: 60px;
@@ -1031,6 +1031,7 @@ a {
 	height: 19px;
 	outline: none;
 }
+
 .delete-btn {
 	position: absolute;
 	font-size: 0;
@@ -1209,7 +1210,7 @@ a {
 }
 
 .breadcrumbs-items {
-	margin: 0;
+	margin: 0 2.3%;
 	padding: 0;
 	list-style-type: none;
 }
@@ -1260,10 +1261,11 @@ a {
 }
 
 .padding-left {
-	margin-top: -53px;
-	margin-bottom: 28px;
+	margin: -53px auto 28px;
 	padding: 0 27px;
 	font-size: 35px;
+	width: 1200px;
+	box-sizing: border-box;
 }
 
 .container1 {
@@ -1405,7 +1407,7 @@ a {
 	width: 20px;
 	height: 23px;
 	top: 8px;
-	background-image: url('../img/filter-button.svg');
+	background-image: url("../img/filter-button.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -1696,9 +1698,10 @@ a {
 	justify-content: flex-end;
 	align-self: flex-end;
 	width: 1170px;
-	padding: 0;
-	margin: 0 0 27px;
+	padding: 0 12px 0 0;
+	margin: 0 auto 27px;
 	list-style: none;
+	box-sizing: border-box;
 }
 
 .inner-slide a {
@@ -1961,12 +1964,15 @@ a {
 	opacity: 0.5;
 	z-index: 2;
 }
+
 .ice-price:hover::after {
 	display: block;
 }
+
 .ice-price:hover .hover-btn {
 	visibility: visible;
 }
+
 .ice-price img {
 	margin-top: 20px;
 	border-radius: 50%;
@@ -2285,6 +2291,7 @@ a {
 }
 
 .feedback {
+	display: none;
 	background-color: #f8f7f4;
 	width: 478px; 
 	height: 444px; 
@@ -2375,7 +2382,6 @@ a {
 	background-color: #ffffff;
 	opacity: 0.3;
 	margin-bottom: 18px;
-
 }
 
 .main-footer {
@@ -2387,7 +2393,6 @@ a {
 	margin: 0 auto;
 	padding-left: 27px;
 	padding-right: 27px;
-
 }
 
 .social1 {
@@ -2489,15 +2494,16 @@ a {
 	font-weight: 700;
 	line-height: 18px;
 	margin-right: 31px;
-	border-bottom: 1px solid rgba(255,255,255,0.2)
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	position: relative;
 }
 
 .provider:before {
 	content: "";
 	background: url("../img/heart.svg") no-repeat;
 	position: absolute;
-	left: 500px;
-	top: 2350px;
+	left: -21px;
+	top: 2px;
 	width: 15px;
 	height: 15px;
 	color: #333333;
