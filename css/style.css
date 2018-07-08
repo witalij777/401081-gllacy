@@ -561,7 +561,7 @@ a {
 	fill: #ffffff;
 }
 
-.enter-in:hover svg{
+.enter-in:hover svg {
 	fill: #323232;
 }
 
@@ -1203,10 +1203,9 @@ a {
 .breadcrumbs {
 	display: -webkit-flex;
 	display: flex;
-	margin: 10px 2.3%;
-	margin-right: 250px;
-	margin-bottom: 6px;
-	margin-top: 16px;
+	width: 1200px;
+	box-sizing: border-box;
+	margin: 16px auto 6px;
 }
 
 .breadcrumbs-items {
@@ -1261,9 +1260,9 @@ a {
 }
 
 .padding-left {
-	margin: -53px auto 28px;
 	padding: 0 27px;
 	font-size: 35px;
+	margin: -53px auto 28px;
 	width: 1200px;
 	box-sizing: border-box;
 }
@@ -1292,7 +1291,7 @@ a {
 	flex-wrap: wrap;
 	-ms-flex-line-pack: justify;
 	align-content: space-between;
-	min-height: 131px;
+	height: 131px;
 	width: 860px;
 }
 
@@ -1307,6 +1306,7 @@ a {
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 1.14em;
+	color: #ffffff;
 }
 
 .filter-fat-wrapper,
@@ -1950,6 +1950,7 @@ a {
 	vertical-align: top;
 	min-height: 274px;
 }
+
 .ice-price::after {
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 5px;
