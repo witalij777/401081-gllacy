@@ -20,6 +20,7 @@ a {
 	padding: 10px 26px;
 	padding-bottom: 12px;
 	font-weight: 700;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	text-align: center;
@@ -96,7 +97,6 @@ a {
 	text-align: center;
 	text-transform: none;
 	text-decoration: none;
-	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 	white-space: normal;
 	background-color: #f26843;
 	background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
@@ -377,13 +377,13 @@ a {
 }
 
 .site-navigation-catalog a {
-	display: block;
-	padding: 7px 0 8px 20px;
+	display: block; 
+	padding: 7px 0 8px 20px; 
 	font-size: 14px;
 	line-height: 1.143em;
 	font-weight: 400;
 	color: #323232;
-	min-width: 143px;
+	width: 117px; 
 }
 
 .site-navigation-catalog:hover {
@@ -398,6 +398,15 @@ a {
 	-webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	list-style: none;
+}
+
+.submenu-bold a {
+	border-bottom: 1px solid black;
+	padding: 7px 0 8px 5px;
+	display: inline-block;
+	margin-left: 8px;
+	min-width: 100px;
+	font-weight: 700;
 }
 
 .catalog-submenu-item:first-child:hover {
@@ -483,6 +492,9 @@ a {
 	margin-left: 15px;
 	margin-bottom: 18px;
 	margin-right: 15px;
+	padding-left: 15px;
+	font-size: 14px;
+	line-height: 24px;
 }
 
 .user-search:hover .search {
@@ -505,10 +517,10 @@ a {
 .link-svg {
 	font-size: 14px;
 	font-weight: 500;
-    display: flex;
-    align-items: center;
-    height: 29px;
-    padding-left: 17px;
+	display: flex;
+	align-items: center;
+	height: 29px;
+	padding-left: 17px;
 }
 
 .link-svg span {
@@ -519,7 +531,7 @@ a {
 	fill: #ffffff;
 }
 
-.login-link:hover svg{
+.login-link:hover svg {
 	fill: #323232;
 }
 
@@ -1013,7 +1025,7 @@ a {
 	text-align: right;
 }
 
-.total:before {
+.total::before {
 	content: "";
 	position: absolute;
 	bottom: 111px;
@@ -1698,7 +1710,7 @@ a {
 	justify-content: flex-end;
 	align-self: flex-end;
 	width: 1170px;
-	padding: 0 12px 0 0;
+	padding: 0 18px 0 0; /* IRA tut 12px */
 	margin: 0 auto 27px;
 	list-style: none;
 	box-sizing: border-box;
@@ -1853,6 +1865,7 @@ a {
 	padding: 0;
 	margin-bottom: 10px;
 	list-style: none;
+	padding-top: 4px;     /* IRA */
 }
 
 .ice-configuration {
@@ -1903,19 +1916,11 @@ a {
 }
 
 .ice-margin {
-	margin-bottom: 45px;
+	margin-bottom: 52px; /* IRA */
 }
 
 .ice-crem ul {
 	list-style: none;
-}
-
-.ice-line2 {
-	margin-top: -5px;
-}
-
-.ice-line3 {
-	margin-top: -9px;
 } 
 
 .price {
@@ -1923,7 +1928,6 @@ a {
 	font-size: 45px;
 	text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 	line-height: 45px;
-
 }
 
 .kilogram {
@@ -1931,6 +1935,14 @@ a {
 	font-size: 30px;
 	text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 	margin-left: -5px;
+}
+
+.first-line-ice {
+	padding-top: 5px;
+}
+
+.space {
+	white-space: pre;
 }
 
 .ice-title {
@@ -1945,7 +1957,7 @@ a {
 	display: inline-block;
 	position: relative;
 	font-size: 16px;
-	margin-bottom: 28px;
+	margin-bottom: 19px;
 	width: 23.25%;
 	vertical-align: top;
 	min-height: 274px;
@@ -2172,14 +2184,20 @@ a {
 
 .subscription-email {
 	margin-right: 13px;
+	font-weight: 400; 
+	font-size: 16px; 
+	line-height: 24px;
+	border-radius: 5px;
+	border: 1px solid #d3d3d2;
 }
 
 .subscription input[type="email"] {
 	flex-grow: 1;
+	padding-left: 14px;
 }
 
 .subscription input[type="submit"] {
-  border: none;
+	border: none;
 }
 
 .map {
@@ -2192,7 +2210,7 @@ a {
 	background-size: cover;
 }
 
-.map:before {
+.map::before {
 	content: "";
 	background: url("../img/pin.svg") no-repeat;
 	position: absolute;
@@ -2324,7 +2342,26 @@ a {
 
 .input-field {
 	font-family: "Roboto", "Arial", sans-serif;
-	font-size: 16px;
+	font-size: 14px;
+	line-height: 24px;
+	border-radius: 5px;
+	border: 1px solid #d3d3d2;
+}
+
+::-webkit-input-placeholder { 
+	color: #999999;
+}
+
+:-moz-placeholder { 
+	color: #999999;
+}
+
+::-moz-placeholder { 
+	color: #999999;
+}
+
+:-ms-input-placeholder { 
+	color: #999999;
 }
 
 .feedback-form textarea.input-field {
@@ -2344,6 +2381,7 @@ a {
 	color: #323232;
 	font-size: 24px; 
 	margin-bottom: 15px;
+	font-weight: 500;
 }
 /*Кнопка закрытия попапа*/
 .modal-close {
@@ -2499,7 +2537,7 @@ a {
 	position: relative;
 }
 
-.provider:before {
+.provider::before {
 	content: "";
 	background: url("../img/heart.svg") no-repeat;
 	position: absolute;
