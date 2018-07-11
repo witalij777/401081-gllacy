@@ -19,7 +19,7 @@ a {
 	vertical-align: top;
 	padding: 10px 26px;
 	padding-bottom: 12px;
-	font-weight: 700;
+	font-weight: 500;
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
@@ -999,7 +999,7 @@ a {
 
 .total {
 	margin-bottom: 36px;
-	margin-right: -18px;
+	margin-right: -20px;
 	margin-top: 1px;
 	font-size: 15px;
 	line-height: 18px;
@@ -1069,7 +1069,6 @@ a {
 	color: #fff;
 	cursor: pointer;
 	text-decoration: none;
-	text-shadow: 0 2px 5px rgba(160, 32, 11, .76);
 	background: #f26843;
 	background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
 	background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
@@ -2329,14 +2328,22 @@ a {
 	margin: 0 0 20px 0;
 }
 
-.feedback-form .input-field {
-	padding: 10px 15px;
+.feedback-form .input-field-window {
+	padding: 9px 15px;
 	width: 55%;
 }
 
 .input-field {
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 14px;
+	line-height: 24px;
+	border-radius: 5px;
+	border: 1px solid #d3d3d2;
+}
+
+.input-field-window {
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
 	line-height: 24px;
 	border-radius: 5px;
 	border: 1px solid #d3d3d2;
@@ -2358,7 +2365,7 @@ a {
 	color: #999999;
 }
 
-.feedback-form textarea.input-field {
+.feedback-form textarea.input-field-window {
 	height: 154px;
 	width: 100%;
 	box-sizing: border-box;
@@ -2366,7 +2373,7 @@ a {
 
 .form-item button {
 	display: flex;
-	margin-left: 290px;
+	margin-left: 292px;
 	padding-left: 22px;
 	padding-right: 22px;
 }
